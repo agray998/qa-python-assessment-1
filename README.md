@@ -17,12 +17,14 @@ In order to complete this assessment, you must do the following:
     git commit -m "completed question one/two/three/etc."
     ```
 
-4. Push up your answers with:
+4. When the two hours are up, push up your answers to GitHub with:
 
     ```bash
     git push origin main
     ```
 
 You **must** make your final commit *before* your 2 hours are up. Any commits after the 2 hour deadline will *not* be counted.
+
+**Remember:** your *commits* are what are timestamped, **not** your pushes.
 
 Good luck!
