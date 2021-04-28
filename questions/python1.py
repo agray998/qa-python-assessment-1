@@ -122,7 +122,19 @@ def three(input):
 
 
 def four(input):
-    return False
+    low = input.lower()
+    if 'ei' in low or 'ie' in low:
+        for i in range(0, len(low)):
+            if low[i+1:i+3] == 'ei':
+                return low[i] == 'c'
+                break
+            elif low[i+1:i+3] == 'ie':
+                return low[i] != 'c'
+                break
+            else:
+                pass
+    else:
+        return False
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
