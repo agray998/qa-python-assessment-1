@@ -238,7 +238,15 @@ def seven(inputString, char):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def eight(arg1):
-	return 0
+    strng_list = arg1.split()
+    sumlist = []
+    for strng in strng_list:
+        sum = 0
+        for char in strng:
+            d = int(char)
+            sum += d
+        sumlist.append(sum)
+    return max(sumlist)
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
