@@ -273,7 +273,12 @@ def eight(arg1):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def nine(input):
-	return ""
+    strng = input.lower()
+    stringlist = strng.split('bert')
+    if strng.count('bert') >= 2:
+        return stringlist[1]
+    else:
+        return ""
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
