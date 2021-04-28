@@ -154,7 +154,9 @@ def four(input):
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def five(input):
-	return 1
+    if input == 1:
+        return 1
+    return input*five(input-1)
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
