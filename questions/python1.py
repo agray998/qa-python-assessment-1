@@ -308,7 +308,17 @@ def nine(input):
 	# help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
 
 def ten(input):
-	return []
+    namelist = []
+    strnglist = input.split(',')
+    for i in range(0, len(strnglist)-3):
+        if strnglist[i+2] == 'False':
+            if strnglist[i] not in namelist:
+                namelist.append(strnglist[i])
+            else:
+                pass
+        else:
+            pass
+    return namelist
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
