@@ -65,7 +65,14 @@ def one(input1, input2):
 	# No hints for this question
 
 def two(arg1):
-	return "null"
+    if arg1 % 3 == 0 and arg1 % 5 == 0:
+        return "fizzbuzz"
+    elif arg1 % 3 == 0:
+        return "fizz"
+    elif arg1 % 5 == 0:
+        return "buzz"
+    else:
+	    return "null"
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
