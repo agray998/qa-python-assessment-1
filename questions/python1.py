@@ -178,7 +178,12 @@ def five(input):
 	# How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
  
 def six(string, int, char):
-	return False
+    case_ig = string.lower()
+    whitespace_ig = case_ig.strip()
+    if int < len(whitespace_ig):
+        return char == whitespace_ig[int-1]
+    else:
+	    return False
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
