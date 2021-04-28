@@ -179,7 +179,7 @@ def five(input):
  
 def six(string, int, char):
     case_ig = string.lower()
-    whitespace_ig = case_ig.strip()
+    whitespace_ig = case_ig.replace(' ','')
     if int < len(whitespace_ig):
         return char == whitespace_ig[int-1]
     else:
@@ -206,7 +206,12 @@ def six(string, int, char):
 	# Take a look at the documentation for Strings, List and range.
 
 def seven(inputString, char):
-	return -1
+    withoutwspace = inputString.replace(' ','')
+    index = withoutwspace.find(char)
+    if index != -1:
+        return index + 1
+    else:
+	    return -1
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
